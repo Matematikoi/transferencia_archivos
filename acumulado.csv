@@ -17,9 +17,25 @@ archivos,100k, 0.004,0.004,0.004
 archivos,1m, 0.007,0.009,0.008
 archivos,10m, 0.048,0.051,0.046
 archivos,100m, 0.957,0.754,0.980
-memoria_compartida,1k ,0.003,0.003,0.003
-memoria_compartida,10k ,0.004,0.003,0.003
+memoria_compartida,1k ,0.003,0.004,0.003
+memoria_compartida,10k ,0.003,0.003,0.003
 memoria_compartida,100k ,0.002,0.003,0.003
-memoria_compartida,1m ,0.005,0.007,0.005
-memoria_compartida,10m ,0.032,0.045,0.042
-memoria_compartida,100m ,0.261,0.236,0.260
+memoria_compartida,1m ,0.005,0.006,0.006
+memoria_compartida,10m ,0.027,0.030,0.031
+memoria_compartida,100m ,0.185,0.195,0.191
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

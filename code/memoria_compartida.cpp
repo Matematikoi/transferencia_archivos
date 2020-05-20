@@ -9,10 +9,10 @@ int * BASE,* RECIBIDO;
 void llenar_base(int tamano_arreglo, int peso_archivo){
     BASE = (int*) malloc(peso_archivo+1);
     RECIBIDO = (int*) malloc(peso_archivo+1);
-    for (int i = 0 ;i <tamano_arreglo;++i){
-        BASE[i] = i % 1000;
-    }
-    memset(RECIBIDO,0,peso_archivo);
+    //for (int i = 0 ;i <tamano_arreglo;++i){
+    //    BASE[i] = i;
+    //}
+    //memset(RECIBIDO,0,peso_archivo);
 }
 
 
@@ -23,12 +23,12 @@ int main(int argc, char* argv[]){
     prefijos["m"]=1e6;
     int peso_archivo=prefijos[argv[2]]*stoi(argv[1]);
     int tamano_arreglo = peso_archivo/4;
-    cout<<"tamano de arreglo : "<<tamano_arreglo<<endl;
+    //cout<<"tamano de arreglo : "<<tamano_arreglo<<endl;
     llenar_base(tamano_arreglo, peso_archivo);
 
     pid_t pid;
     int status,shmId, *ap;
-    key_t key=9192;
+    key_t key=1245;
     //crear espacio de memoria compartida
     shmId = shmget(key, peso_archivo, 0666|IPC_CREAT);
     if(shmId < 0){
@@ -44,12 +44,17 @@ int main(int argc, char* argv[]){
       perror("error en fork"); exit(EXIT_FAILURE); 
     }
     if (pid == 0){
-        copy(BASE,BASE + tamano_arreglo, ap);
+        //copy(BASE,BASE + tamano_arreglo, ap);
+        for (int i=0;i<tamano_arreglo;++i){
+            *(ap + i) = i;
+        }
     }
     else{
         if (wait(&status) == pid){
             copy(ap,ap + tamano_arreglo, RECIBIDO);
+            //for (int i =0;i<tamano_arreglo;++i)cout<<RECIBIDO[i]<<'\n';
         }
+
     }
     int r = shmdt(ap);  //desasociar espacio de memoria compartida
     if(r < 0){
