@@ -1,14 +1,14 @@
 Archivos
-1k 0m0.018s
-10k 0m0.004s
-100k 0m0.003s
+1k 0m0.016s
+10k 0m0.003s
+100k 0m0.004s
 1m 0m0.006s
-10m 0m0.046s
-100m 0m0.940s
+10m 0m0.055s
+100m 0m0.977s
 memoria_compartida
 1k 0m0.003s
-10k 0m0.002s
+10k 0m0.003s
 100k 0m0.004s
-1m 0m0.007s
-10m 0m0.051s
-100m 0m0.305s
+1m 0m0.011s
+10m 0m0.108s
+100m 0m0.503s

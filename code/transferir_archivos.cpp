@@ -45,7 +45,7 @@ int main(int argc, char* argv[]){
     prefijos["k"]=1e3;
     prefijos["m"]=1e6;
     int peso_archivo=prefijos[argv[2]]*stoi(argv[1]);
-    int tamano_arreglo = peso_archivo/8;
+    int tamano_arreglo = peso_archivo/4;
     cout<<"tamano de arreglo : "<<tamano_arreglo<<endl;
     llenar_base(tamano_arreglo, peso_archivo);
     pid_t pid;
