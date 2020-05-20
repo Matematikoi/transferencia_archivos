@@ -1,0 +1,25 @@
+tipo_transferencia,peso,t1,t2,t3
+pipes,1k, 0.002, 0.002, 0.002
+pipes,10k, 0.002, 0.002, 0.002
+pipes,100k, 0.002, 0.002, 0.002
+pipes,1m, 0.004, 0.005, 0.004
+pipes,10m, 0.021, 0.024, 0.021
+pipes,100m, 0.182, 0.208, 0.180
+cliente_servidor, 1k, 0.001, 0.001, 0.001
+cliente_servidor, 10k, 0.001, 0.001, 0.001
+cliente_servidor, 100k, 0.001, 0.001, 0.001
+cliente_servidor, 1m, 0.002, 0.002, 0.002
+cliente_servidor, 10m, 0.011, 0.011, 0.011
+cliente_servidor, 100m, 0.096, 0.097, 0.097
+archivos,1k, 0.100,0.020,0.024
+archivos,10k, 0.004,0.003,0.003
+archivos,100k, 0.004,0.004,0.004
+archivos,1m, 0.007,0.009,0.008
+archivos,10m, 0.048,0.051,0.046
+archivos,100m, 0.957,0.754,0.980
+memoria_compartida,1k ,0.003,0.003,0.003
+memoria_compartida,10k ,0.004,0.003,0.003
+memoria_compartida,100k ,0.002,0.003,0.003
+memoria_compartida,1m ,0.005,0.007,0.005
+memoria_compartida,10m ,0.032,0.045,0.042
+memoria_compartida,100m ,0.261,0.236,0.260
