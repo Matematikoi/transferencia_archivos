@@ -9,8 +9,8 @@ cliente_servidor, 1k, 0.001, 0.001, 0.001
 cliente_servidor, 10k, 0.001, 0.001, 0.001
 cliente_servidor, 100k, 0.001, 0.001, 0.001
 cliente_servidor, 1m, 0.002, 0.002, 0.002
-cliente_servidor, 10m, 0.011, 0.011, 0.011
-cliente_servidor, 100m, 0.096, 0.097, 0.097
+cliente_servidor, 10m, 0.015, 0.013, 0.014
+cliente_servidor, 100m, 0.137, 0.124, 0.122
 archivos,1k, 0.100,0.020,0.024
 archivos,10k, 0.004,0.003,0.003
 archivos,100k, 0.004,0.004,0.004
