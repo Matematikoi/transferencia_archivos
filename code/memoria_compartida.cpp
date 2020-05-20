@@ -44,19 +44,12 @@ int main(int argc, char* argv[]){
       perror("error en fork"); exit(EXIT_FAILURE); 
     }
     if (pid == 0){
-        for (int i=0;i<tamano_arreglo;++i)
-            *(ap+i) = BASE[i];
+        copy(BASE,BASE + tamano_arreglo, ap);
     }
     else{
         if (wait(&status) == pid){
-            for (int i=0;i<tamano_arreglo;++i)
-                RECIBIDO[i] = *(ap+i);
+            copy(ap,ap + tamano_arreglo, RECIBIDO);
         }
-    }
- 
-    for (int i=0;i<tamano_arreglo;++i){
-        //cout << BASE[i]<<' '<<RECIBIDO[i]<<endl;
-        continue;
     }
     int r = shmdt(ap);  //desasociar espacio de memoria compartida
     if(r < 0){
